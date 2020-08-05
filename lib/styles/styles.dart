@@ -3,10 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Styles {
-  TextStyle textStyle = GoogleFonts.specialElite(
-    fontSize: 20,
-    fontWeight: FontWeight.w600,
-    letterSpacing: 1.8,
+  TextStyle buttonStyle = GoogleFonts.chelseaMarket(
+    fontSize: 22,
+    fontWeight: FontWeight.w100,
+    color: Colors.purpleAccent[400],
+  );
+
+  TextStyle descriptionNameStyle = GoogleFonts.chelseaMarket(
+    fontSize: 60,
+    color: Colors.purpleAccent[400],
+  );
+  TextStyle descriptionStyle1 = GoogleFonts.chelseaMarket(
+    fontSize: 22,
+    color: Colors.purpleAccent[400],
+  );
+  TextStyle descriptionStyle2 = GoogleFonts.chelseaMarket(
+    fontSize: 22,
     color: Colors.white,
   );
 }

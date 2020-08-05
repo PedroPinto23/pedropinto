@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Widgets/Portfolio/portfolio.dart';
+import 'package:my_portfolio/Screens/Portfolio/portfolio.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pedro Pinto',
       theme: ThemeData(
-        primaryColor: Colors.teal,
+        primaryColor: Colors.purple[600],
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

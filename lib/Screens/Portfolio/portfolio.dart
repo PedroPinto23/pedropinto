@@ -41,30 +41,26 @@ class Portfolio extends StatelessWidget {
                   ],
                 ),
               ),
-              Positioned(
-                top: 180,
-                left: 150,
-                bottom: 180,
-                child: Container(
-                  height: 250,
-                  width: 250,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 10,
-                        spreadRadius: 5,
-                      )
-                    ],
-                    image: DecorationImage(
-                        image: AssetImage(
-                          "images/perfil.jpg",
-                        ),
-                        fit: BoxFit.fill),
-                    shape: BoxShape.circle,
-                  ),
+              Container(
+                margin: EdgeInsets.only(left: 150, top: 180),
+                height: 220,
+                width: 220,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 10,
+                      spreadRadius: 5,
+                    )
+                  ],
+                  image: DecorationImage(
+                      image: AssetImage(
+                        "images/perfil.jpg",
+                      ),
+                      fit: BoxFit.fill),
+                  shape: BoxShape.circle,
                 ),
-              )
+              ),
             ],
           ),
         ));

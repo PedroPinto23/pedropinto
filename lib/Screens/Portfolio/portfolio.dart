@@ -31,12 +31,38 @@ class Portfolio extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
+                      flex: 3,
                       child: Descricao(),
                     ),
                     Expanded(
+                      flex: 2,
                       child: Container(),
                     ),
                   ],
+                ),
+              ),
+              Positioned(
+                top: 180,
+                left: 150,
+                bottom: 180,
+                child: Container(
+                  height: 250,
+                  width: 250,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 10,
+                        spreadRadius: 5,
+                      )
+                    ],
+                    image: DecorationImage(
+                        image: AssetImage(
+                          "images/perfil.jpg",
+                        ),
+                        fit: BoxFit.fill),
+                    shape: BoxShape.circle,
+                  ),
                 ),
               )
             ],

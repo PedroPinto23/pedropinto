@@ -21,7 +21,7 @@ class Descricao extends StatelessWidget {
             ),
           ),
           Container(
-            width: 800,
+            width: 900,
             color: Colors.white,
             padding: EdgeInsets.only(top: 3, right: 75),
             child: Text(
@@ -31,27 +31,24 @@ class Descricao extends StatelessWidget {
             ),
           ),
           Container(
-            width: 800,
-            padding: EdgeInsets.only(right: 200),
-            margin: EdgeInsets.symmetric(vertical: 20),
-            child: Text(
-              "Android / Ios",
-              textAlign: TextAlign.right,
-              style: descriptionStyle2,
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 120),
-            margin: EdgeInsets.symmetric(vertical: 30),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("• Flutter / Dart", style: descriptionStyle2),
-                Text("• Firebase", style: descriptionStyle2),
-                Text("• CRUD", style: descriptionStyle2),
-              ],
-            ),
-          )
+              width: 800,
+              padding: EdgeInsets.only(left: 460),
+              margin: EdgeInsets.symmetric(vertical: 20),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Android / Ios",
+                      textAlign: TextAlign.right,
+                      style: descriptionStyle2,
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Text("• Flutter / Dart", style: descriptionStyle2),
+                    Text("• Firebase", style: descriptionStyle2),
+                    Text("• CRUD", style: descriptionStyle2),
+                  ])),
         ],
       ),
     );

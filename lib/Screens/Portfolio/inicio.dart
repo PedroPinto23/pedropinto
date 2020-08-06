@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
 import 'package:my_portfolio/Widgets/Descricao/descricao.dart';
 
-class Portfolio extends StatelessWidget {
+class Inicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,18 @@ class Portfolio extends StatelessWidget {
                     ),
                     Expanded(
                       flex: 2,
-                      child: Container(),
+                      child: Container(
+                        margin: EdgeInsets.only(right: 20),
+                        alignment: Alignment.centerRight,
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Colors.white,
+                            size: 42,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -49,8 +60,8 @@ class Portfolio extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black,
-                      blurRadius: 10,
-                      spreadRadius: 5,
+                      blurRadius: 15,
+                      spreadRadius: 3,
                     )
                   ],
                   image: DecorationImage(

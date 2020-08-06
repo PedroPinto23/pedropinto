@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Screens/Portfolio/portfolio.dart';
+import 'package:my_portfolio/Screens/Portfolio/inicio.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: Portfolio(),
+      home: Inicio(),
     );
   }
 }

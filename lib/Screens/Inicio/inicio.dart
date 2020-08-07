@@ -10,6 +10,7 @@ class Inicio extends StatelessWidget {
           backgroundColor: Colors.white,
           title: BotoesTopo(),
           centerTitle: true,
+          elevation: 8,
         ),
         body: Container(
           child: Stack(
@@ -39,11 +40,16 @@ class Inicio extends StatelessWidget {
                       child: Container(
                         margin: EdgeInsets.only(right: 20),
                         alignment: Alignment.centerRight,
-                        child: IconButton(
-                          icon: Icon(
-                            Icons.arrow_forward_ios,
-                            color: Colors.white,
-                            size: 42,
+                        child: MaterialButton(
+                          shape: CircleBorder(),
+                          hoverColor: Theme.of(context).primaryColor,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                              size: 52,
+                            ),
                           ),
                           onPressed: () {},
                         ),

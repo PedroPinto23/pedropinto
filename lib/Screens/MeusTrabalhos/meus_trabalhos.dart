@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'package:my_portfolio/Screens/Contato/contato.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Appjur/appjur.dart';
 import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 import 'package:my_portfolio/styles/styles.dart';
-
 import 'Projetos/Pettech/pettech.dart';
 
 class MeusTrabalhos extends StatelessWidget {

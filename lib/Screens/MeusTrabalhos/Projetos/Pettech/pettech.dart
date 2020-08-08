@@ -22,11 +22,15 @@ class Pettech extends StatelessWidget {
             ),
           ),
           MaterialButton(
+            shape: CircleBorder(),
             color: Colors.white,
-            child: Icon(
-              Icons.videocam,
-              color: Theme.of(context).primaryColor,
-              size: 30,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(
+                Icons.videocam,
+                color: Theme.of(context).primaryColor,
+                size: 30,
+              ),
             ),
             onPressed: () {
               showDialog(

@@ -21,24 +21,72 @@ class Appjur extends StatelessWidget {
               style: styleWhiteBigger,
             ),
           ),
-          MaterialButton(
-            color: Colors.white,
-            child: Icon(
-              Icons.videocam,
-              color: Theme.of(context).primaryColor,
-              size: 30,
-            ),
-            onPressed: () {
-              showDialog(
-                  context: context,
-                  child: AlertDialog(
-                    content: FadeInImage.memoryNetwork(
-                      placeholder: kTransparentImage,
-                      image: "images/projetos/appjur_video.gif",
-                      fit: BoxFit.cover,
-                    ),
-                  ));
-            },
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              MaterialButton(
+                shape: CircleBorder(),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.videocam,
+                        color: Theme.of(context).primaryColor,
+                        size: 30,
+                      ),
+                      Text(
+                        "1",
+                        style: styles.styleAverageFont,
+                      )
+                    ],
+                  ),
+                ),
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      child: AlertDialog(
+                        content: FadeInImage.memoryNetwork(
+                          placeholder: kTransparentImage,
+                          image: "images/projetos/appjur_video.gif",
+                          fit: BoxFit.cover,
+                        ),
+                      ));
+                },
+              ),
+              MaterialButton(
+                shape: CircleBorder(),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.videocam,
+                        color: Theme.of(context).primaryColor,
+                        size: 30,
+                      ),
+                      Text(
+                        "2",
+                        style: styles.styleAverageFont,
+                      )
+                    ],
+                  ),
+                ),
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      child: AlertDialog(
+                        content: FadeInImage.memoryNetwork(
+                          placeholder: kTransparentImage,
+                          image: "images/projetos/appjur_video2.gif",
+                          fit: BoxFit.cover,
+                        ),
+                      ));
+                },
+              ),
+            ],
           ),
           SizedBox(
             height: 5,

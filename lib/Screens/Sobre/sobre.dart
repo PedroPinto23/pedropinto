@@ -39,7 +39,7 @@ class Sobre extends StatelessWidget {
                 padding: EdgeInsets.all(15),
                 alignment: Alignment.topCenter,
                 child: Text(
-                  "Quem eu sou",
+                  "Quem sou eu",
                   style: styleWhiteBigger,
                 ),
               ),

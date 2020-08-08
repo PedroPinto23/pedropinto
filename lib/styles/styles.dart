@@ -9,16 +9,20 @@ class Styles {
     color: Colors.purpleAccent[400],
   );
 
-  TextStyle descriptionNameStyle = GoogleFonts.chelseaMarket(
+  TextStyle styleFontBigger = GoogleFonts.chelseaMarket(
     fontSize: 60,
     color: Colors.purpleAccent[400],
   );
-  TextStyle descriptionStyle1 = GoogleFonts.chelseaMarket(
+  TextStyle styleAverageFont = GoogleFonts.chelseaMarket(
     fontSize: 22,
     color: Colors.purpleAccent[400],
   );
-  TextStyle descriptionStyle2 = GoogleFonts.chelseaMarket(
+  TextStyle styleWhiteColor = GoogleFonts.chelseaMarket(
     fontSize: 22,
+    color: Colors.white,
+  );
+  TextStyle styleWhiteBigger = GoogleFonts.chelseaMarket(
+    fontSize: 40,
     color: Colors.white,
   );
 }

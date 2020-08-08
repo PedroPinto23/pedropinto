@@ -5,9 +5,9 @@ class Descricao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Styles styles = Styles();
-    TextStyle descriptionNameStyle = styles.descriptionNameStyle;
-    TextStyle descriptionStyle1 = styles.descriptionStyle1;
-    TextStyle descriptionStyle2 = styles.descriptionStyle2;
+    TextStyle styleFontBigger = styles.styleFontBigger;
+    TextStyle styleAverageFont = styles.styleAverageFont;
+    TextStyle styleWhiteColor = styles.styleWhiteColor;
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -17,7 +17,7 @@ class Descricao extends StatelessWidget {
             padding: EdgeInsets.only(left: 160, top: 160, bottom: 5),
             child: Text(
               "Pedro Pinto",
-              style: descriptionNameStyle,
+              style: styleFontBigger,
             ),
           ),
           Container(
@@ -27,7 +27,7 @@ class Descricao extends StatelessWidget {
             child: Text(
               "Desenvolvimento Mobile",
               textAlign: TextAlign.right,
-              style: descriptionStyle1,
+              style: styleAverageFont,
             ),
           ),
           Container(
@@ -40,14 +40,14 @@ class Descricao extends StatelessWidget {
                     Text(
                       "Android / Ios",
                       textAlign: TextAlign.right,
-                      style: descriptionStyle2,
+                      style: styleWhiteColor,
                     ),
                     SizedBox(
                       height: 40,
                     ),
-                    Text("• Flutter / Dart", style: descriptionStyle2),
-                    Text("• Firebase", style: descriptionStyle2),
-                    Text("• CRUD", style: descriptionStyle2),
+                    Text("• Flutter / Dart", style: styleWhiteColor),
+                    Text("• Firebase", style: styleWhiteColor),
+                    Text("• CRUD", style: styleWhiteColor),
                   ])),
         ],
       ),

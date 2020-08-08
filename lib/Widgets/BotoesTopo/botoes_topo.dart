@@ -9,7 +9,6 @@ class BotoesTopo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(right: 220, left: 50),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

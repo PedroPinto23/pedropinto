@@ -7,8 +7,8 @@ class CardProjeto extends StatelessWidget {
   final double width;
   CardProjeto({
     @required this.image,
-    @required this.height,
-    @required this.width,
+    this.height,
+    this.width,
   });
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class CardProjeto extends StatelessWidget {
       onTap: () {
         showDialog(
             context: context,
-            child: Card(
-              child: FadeInImage.memoryNetwork(
+            child: AlertDialog(
+              content: FadeInImage.memoryNetwork(
                 placeholder: kTransparentImage,
                 image: image,
                 fit: BoxFit.cover,
@@ -25,6 +25,7 @@ class CardProjeto extends StatelessWidget {
             ));
       },
       child: Card(
+        margin: EdgeInsets.only(top: 15),
         child: Container(
           height: height,
           width: width,

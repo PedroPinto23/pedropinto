@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/Contato/contato.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Appjur/appjur.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Parceiro/parceiro.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Skill/skill.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
@@ -22,6 +25,7 @@ class MeusTrabalhos extends StatelessWidget {
         ),
         backgroundColor: Colors.grey[900],
         body: Stack(children: [
+          ImagemFundo(),
           NextBackButton(
             alignment: Alignment.centerLeft,
             icone: Icons.arrow_back_ios,
@@ -50,6 +54,8 @@ class MeusTrabalhos extends StatelessWidget {
                     ),
                     Pettech(),
                     Appjur(),
+                    Parceiro(),
+                    Skill(),
                   ],
                 ),
               )),

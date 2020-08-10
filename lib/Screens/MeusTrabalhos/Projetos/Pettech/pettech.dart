@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -8,6 +9,7 @@ class Pettech extends StatelessWidget {
   Widget build(BuildContext context) {
     Styles styles = Styles();
     TextStyle styleWhiteBigger = styles.styleWhiteBigger;
+
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
       child: Column(
@@ -21,28 +23,33 @@ class Pettech extends StatelessWidget {
               style: styleWhiteBigger,
             ),
           ),
-          MaterialButton(
-            shape: CircleBorder(),
-            color: Colors.white,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Icon(
-                Icons.videocam,
-                color: Theme.of(context).primaryColor,
-                size: 30,
+          Finalizado(
+            texto: "1 mês",
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            child: MaterialButton(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Icon(
+                  Icons.gif,
+                  color: Theme.of(context).primaryColor,
+                  size: 42,
+                ),
               ),
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    child: AlertDialog(
+                      content: FadeInImage.memoryNetwork(
+                        placeholder: kTransparentImage,
+                        image: "images/projetos/pettech_demo.gif",
+                        fit: BoxFit.cover,
+                      ),
+                    ));
+              },
             ),
-            onPressed: () {
-              showDialog(
-                  context: context,
-                  child: AlertDialog(
-                    content: FadeInImage.memoryNetwork(
-                      placeholder: kTransparentImage,
-                      image: "images/projetos/pettech_demo.gif",
-                      fit: BoxFit.cover,
-                    ),
-                  ));
-            },
           ),
           SizedBox(
             height: 5,

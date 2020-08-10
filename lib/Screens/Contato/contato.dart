@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 import 'package:my_portfolio/styles/styles.dart';
@@ -19,6 +20,7 @@ class Contato extends StatelessWidget {
         ),
         backgroundColor: Colors.grey[900],
         body: Stack(children: [
+          ImagemFundo(),
           NextBackButton(
             alignment: Alignment.centerLeft,
             icone: Icons.arrow_back_ios,

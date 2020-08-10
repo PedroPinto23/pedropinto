@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -8,6 +9,8 @@ class Appjur extends StatelessWidget {
   Widget build(BuildContext context) {
     Styles styles = Styles();
     TextStyle styleWhiteBigger = styles.styleWhiteBigger;
+    TextStyle gifStyle = styles.stylesmallFont;
+
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
       child: Column(
@@ -21,70 +24,77 @@ class Appjur extends StatelessWidget {
               style: styleWhiteBigger,
             ),
           ),
+          Finalizado(
+            texto: "13 dias",
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MaterialButton(
-                shape: CircleBorder(),
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.videocam,
-                        color: Theme.of(context).primaryColor,
-                        size: 30,
-                      ),
-                      Text(
-                        "1",
-                        style: styles.styleAverageFont,
-                      )
-                    ],
-                  ),
-                ),
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      child: AlertDialog(
-                        content: FadeInImage.memoryNetwork(
-                          placeholder: kTransparentImage,
-                          image: "images/projetos/appjur_video.gif",
-                          fit: BoxFit.cover,
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                child: MaterialButton(
+                  color: Colors.white,
+                  child: Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.gif,
+                          color: Theme.of(context).primaryColor,
+                          size: 42,
                         ),
-                      ));
-                },
+                        Text(
+                          "1",
+                          style: gifStyle,
+                        )
+                      ],
+                    ),
+                  ),
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        child: AlertDialog(
+                          content: FadeInImage.memoryNetwork(
+                            placeholder: kTransparentImage,
+                            image: "images/projetos/appjur_video.gif",
+                            fit: BoxFit.cover,
+                          ),
+                        ));
+                  },
+                ),
               ),
-              MaterialButton(
-                shape: CircleBorder(),
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      Icon(
-                        Icons.videocam,
-                        color: Theme.of(context).primaryColor,
-                        size: 30,
-                      ),
-                      Text(
-                        "2",
-                        style: styles.styleAverageFont,
-                      )
-                    ],
-                  ),
-                ),
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      child: AlertDialog(
-                        content: FadeInImage.memoryNetwork(
-                          placeholder: kTransparentImage,
-                          image: "images/projetos/appjur_video2.gif",
-                          fit: BoxFit.cover,
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                child: MaterialButton(
+                  color: Colors.white,
+                  child: Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.gif,
+                          color: Theme.of(context).primaryColor,
+                          size: 42,
                         ),
-                      ));
-                },
+                        Text(
+                          "2",
+                          style: gifStyle,
+                        )
+                      ],
+                    ),
+                  ),
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        child: AlertDialog(
+                          content: FadeInImage.memoryNetwork(
+                            placeholder: kTransparentImage,
+                            image: "images/projetos/appjur_video2.gif",
+                            fit: BoxFit.cover,
+                          ),
+                        ));
+                  },
+                ),
               ),
             ],
           ),
@@ -109,11 +119,6 @@ class Appjur extends StatelessWidget {
                 width: 130,
                 image: "images/projetos/appjur_cadastro.jpg",
               ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
               CardProjeto(
                 height: 250,
                 width: 130,

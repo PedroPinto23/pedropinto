@@ -17,6 +17,10 @@ class Styles {
     fontSize: 22,
     color: Colors.purpleAccent[400],
   );
+  TextStyle stylesmallFont = GoogleFonts.chelseaMarket(
+    fontSize: 15,
+    color: Colors.purpleAccent[400],
+  );
   TextStyle styleWhiteColor = GoogleFonts.chelseaMarket(
     fontSize: 22,
     color: Colors.white,

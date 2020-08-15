@@ -22,6 +22,7 @@ class RedesSociais extends StatelessWidget {
             icon: FontAwesomeIcons.githubAlt,
             color: Colors.black,
             onPressed: () {
+              
               launch("https://github.com/PedroPinto23");
             },
           ),

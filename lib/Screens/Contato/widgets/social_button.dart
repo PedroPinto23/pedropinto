@@ -17,7 +17,7 @@ class SocialButton extends StatelessWidget {
         child: MaterialButton(
           color: Colors.white,
           shape: CircleBorder(),
-          hoverColor: Colors.black12,
+          hoverColor: Colors.deepPurple[400],
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Icon(

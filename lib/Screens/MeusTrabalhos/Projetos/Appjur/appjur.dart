@@ -32,6 +32,7 @@ class Appjur extends StatelessWidget {
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                 child: MaterialButton(
+                  hoverColor: Colors.black,
                   color: Colors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(4.0),
@@ -66,6 +67,7 @@ class Appjur extends StatelessWidget {
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                 child: MaterialButton(
+                  hoverColor: Colors.black,
                   color: Colors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(4.0),

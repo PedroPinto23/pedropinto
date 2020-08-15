@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/Contato/widgets/email_sender.dart';
 import 'package:my_portfolio/Screens/Contato/widgets/redes_sociais.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
@@ -31,7 +32,7 @@ class Contato extends StatelessWidget {
           ),
           Container(
               child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 padding: EdgeInsets.all(15),
@@ -41,6 +42,7 @@ class Contato extends StatelessWidget {
                   style: styleWhiteBigger,
                 ),
               ),
+              EmailSender(),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [

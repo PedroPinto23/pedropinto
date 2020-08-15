@@ -44,7 +44,12 @@ class Contato extends StatelessWidget {
                     style: styleWhiteBigger,
                   ),
                 ),
-                Contacts(),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Contacts(),
+                  ),
+                ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

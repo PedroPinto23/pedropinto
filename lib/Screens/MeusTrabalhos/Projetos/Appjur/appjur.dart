@@ -9,7 +9,6 @@ class Appjur extends StatelessWidget {
   Widget build(BuildContext context) {
     Styles styles = Styles();
     TextStyle styleWhiteBigger = styles.styleWhiteBigger;
-    TextStyle gifStyle = styles.stylesmallFont;
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
@@ -43,10 +42,11 @@ class Appjur extends StatelessWidget {
                           color: Theme.of(context).primaryColor,
                           size: 42,
                         ),
-                        Text(
-                          "1",
-                          style: gifStyle,
-                        )
+                        Icon(
+                          Icons.looks_one,
+                          color: Theme.of(context).primaryColor,
+                          size: 32,
+                        ),
                       ],
                     ),
                   ),
@@ -76,10 +76,11 @@ class Appjur extends StatelessWidget {
                           color: Theme.of(context).primaryColor,
                           size: 42,
                         ),
-                        Text(
-                          "2",
-                          style: gifStyle,
-                        )
+                        Icon(
+                          Icons.looks_two,
+                          color: Theme.of(context).primaryColor,
+                          size: 32,
+                        ),
                       ],
                     ),
                   ),

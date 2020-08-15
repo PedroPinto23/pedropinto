@@ -16,7 +16,6 @@ class Botao extends StatelessWidget {
       child: RaisedButton(
         elevation: 0,
         color: Colors.transparent,
-        highlightColor: Colors.grey[900],
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(45)),
         hoverColor: Colors.grey[900],
         onPressed: onPressed,

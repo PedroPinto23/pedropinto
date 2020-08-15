@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/Contato/widgets/redes_sociais.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
@@ -10,6 +11,7 @@ class Contato extends StatelessWidget {
   Widget build(BuildContext context) {
     Styles styles = Styles();
     TextStyle styleWhiteBigger = styles.styleWhiteBigger;
+    TextStyle styleWhiteColor = styles.styleWhiteColor;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -29,6 +31,7 @@ class Contato extends StatelessWidget {
           ),
           Container(
               child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 padding: EdgeInsets.all(15),
@@ -37,6 +40,19 @@ class Contato extends StatelessWidget {
                   "Entre Em Contato",
                   style: styleWhiteBigger,
                 ),
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(bottom: 15),
+                    child: Text(
+                      "Me encontre nas redes sociais",
+                      style: styleWhiteColor,
+                    ),
+                  ),
+                  RedesSociais(),
+                ],
               ),
             ],
           )),

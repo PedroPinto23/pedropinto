@@ -48,7 +48,8 @@ class MeusTrabalhos extends StatelessWidget {
                       alignment: Alignment.topCenter,
                       margin: EdgeInsets.all(8),
                       child: Text(
-                        "Meus Projetos como Freelancer",
+                        "Meus projetos como Freelancer",
+                        textAlign: TextAlign.center,
                         style: style,
                       ),
                     ),

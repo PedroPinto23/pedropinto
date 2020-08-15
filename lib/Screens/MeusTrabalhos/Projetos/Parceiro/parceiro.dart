@@ -104,40 +104,42 @@ class Parceiro extends StatelessWidget {
           SizedBox(
             height: 5,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_login.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_cadastro.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_homescreen.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_indicar.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_detalhes.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/parceiro_chat1.jpg",
-              ),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_login.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_cadastro.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_homescreen.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_indicar.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_detalhes.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/parceiro_chat1.jpg",
+                ),
+              ],
+            ),
           ),
         ],
       ),

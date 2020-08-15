@@ -11,22 +11,25 @@ class SocialButton extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return Container(
-        padding: EdgeInsets.all(15),
-        margin: EdgeInsets.only(right: 20),
-        child: MaterialButton(
-          color: Colors.white,
-          shape: CircleBorder(),
-          hoverColor: Colors.deepPurple[400],
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Icon(
-              icon,
-              color: color,
-              size: 32,
-            ),
+    return Card(
+      borderOnForeground: false,
+      elevation: 15,
+      shape: CircleBorder(),
+      margin: EdgeInsets.all(8),
+      child: RawMaterialButton(
+        padding: EdgeInsets.all(5),
+        fillColor: Colors.white,
+        hoverColor: Colors.grey[900],
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Icon(
+            icon,
+            color: color,
+            size: 35,
           ),
-          onPressed: onPressed,
-        ));
+        ),
+        onPressed: onPressed,
+      ),
+    );
   }
 }

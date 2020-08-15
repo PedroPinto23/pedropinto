@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Screens/Contato/widgets/email_sender.dart';
+import 'package:my_portfolio/Screens/Contato/widgets/contacts.dart';
 import 'package:my_portfolio/Screens/Contato/widgets/redes_sociais.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
@@ -30,33 +30,36 @@ class Contato extends StatelessWidget {
             widget: MeusTrabalhos(),
             dx: -1,
           ),
-          Container(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                padding: EdgeInsets.all(15),
-                alignment: Alignment.topCenter,
-                child: Text(
-                  "Entre Em Contato",
-                  style: styleWhiteBigger,
-                ),
-              ),
-              EmailSender(),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(bottom: 15),
-                    child: Text(
-                      "Me encontre nas redes sociais",
-                      style: styleWhiteColor,
-                    ),
+          SingleChildScrollView(
+              child: Container(
+            height: MediaQuery.of(context).size.height,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(15),
+                  alignment: Alignment.topCenter,
+                  child: Text(
+                    "Entre Em Contato",
+                    style: styleWhiteBigger,
                   ),
-                  RedesSociais(),
-                ],
-              ),
-            ],
+                ),
+                Contacts(),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(bottom: 15),
+                      child: Text(
+                        "Me encontre nas redes sociais",
+                        style: styleWhiteColor,
+                      ),
+                    ),
+                    RedesSociais(),
+                  ],
+                ),
+              ],
+            ),
           )),
         ]));
   }

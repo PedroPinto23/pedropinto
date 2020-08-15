@@ -12,29 +12,32 @@ class CardProjeto extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        showDialog(
-            context: context,
-            child: AlertDialog(
-              content: FadeInImage.memoryNetwork(
-                placeholder: kTransparentImage,
-                image: image,
-                fit: BoxFit.cover,
-              ),
-            ));
-      },
-      child: Card(
-        margin: EdgeInsets.only(top: 15),
-        child: Container(
-          height: height,
-          width: width,
-          decoration:
-              BoxDecoration(border: Border.all(color: Colors.white, width: 2)),
-          child: FadeInImage.memoryNetwork(
-            placeholder: kTransparentImage,
-            image: image,
-            fit: BoxFit.cover,
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 20),
+      child: InkWell(
+        onTap: () {
+          showDialog(
+              context: context,
+              child: AlertDialog(
+                content: FadeInImage.memoryNetwork(
+                  placeholder: kTransparentImage,
+                  image: image,
+                  fit: BoxFit.cover,
+                ),
+              ));
+        },
+        child: Card(
+          margin: EdgeInsets.only(top: 15),
+          child: Container(
+            height: height,
+            width: width,
+            decoration: BoxDecoration(
+                border: Border.all(color: Colors.white, width: 2)),
+            child: FadeInImage.memoryNetwork(
+              placeholder: kTransparentImage,
+              image: image,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),

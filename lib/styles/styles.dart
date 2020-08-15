@@ -10,7 +10,7 @@ class Styles {
   );
 
   TextStyle styleFontBigger = GoogleFonts.chelseaMarket(
-    fontSize: 60,
+    fontSize: 50,
     color: Colors.purpleAccent[400],
   );
   TextStyle styleAverageFont = GoogleFonts.chelseaMarket(

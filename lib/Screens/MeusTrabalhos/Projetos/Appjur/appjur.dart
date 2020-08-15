@@ -104,40 +104,42 @@ class Appjur extends StatelessWidget {
           SizedBox(
             height: 5,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur_auth_message.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur_cadastro.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur_auth.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur_auth_verify.jpg",
-              ),
-              CardProjeto(
-                height: 250,
-                width: 130,
-                image: "images/projetos/appjur_switch_user.jpg",
-              ),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur_auth_message.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur_cadastro.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur_auth.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur_auth_verify.jpg",
+                ),
+                CardProjeto(
+                  height: 250,
+                  width: 130,
+                  image: "images/projetos/appjur_switch_user.jpg",
+                ),
+              ],
+            ),
           ),
         ],
       ),

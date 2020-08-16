@@ -19,7 +19,9 @@ class NextBackButton extends StatelessWidget {
         shape: CircleBorder(),
         hoverColor: Theme.of(context).primaryColor,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: dx == -1
+              ? EdgeInsets.only(left: 28, top: 8, bottom: 8, right: 8)
+              : EdgeInsets.all(8),
           child: Icon(
             icone,
             color: Colors.white,

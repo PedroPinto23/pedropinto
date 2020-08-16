@@ -26,7 +26,7 @@ class Styles {
     color: Colors.white,
   );
   TextStyle styleWhiteBigger = GoogleFonts.chelseaMarket(
-    fontSize: 40,
+    fontSize: 32,
     color: Colors.white,
   );
 }

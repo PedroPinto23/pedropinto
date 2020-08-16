@@ -30,7 +30,7 @@ class Contacts extends StatelessWidget {
                         },
                       ),
                       Text(
-                        "Email",
+                        "Enviar um Email",
                         style: GoogleFonts.chelseaMarket(
                             color: Colors.white,
                             fontSize: 22,
@@ -57,7 +57,7 @@ class Contacts extends StatelessWidget {
                         },
                       ),
                       Text(
-                        "WhatsApp",
+                        "Conversar pelo WhatsApp",
                         style: GoogleFonts.chelseaMarket(
                             color: Colors.white,
                             fontSize: 22,

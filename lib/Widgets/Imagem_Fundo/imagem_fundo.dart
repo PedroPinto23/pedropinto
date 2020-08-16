@@ -9,7 +9,8 @@ class ImagemFundo extends StatelessWidget {
           Image.asset(
             "images/_kungfury.jpg",
             width: MediaQuery.of(context).size.width,
-            fit: BoxFit.fill,
+            height: MediaQuery.of(context).size.height,
+            fit: BoxFit.cover,
           ),
           Opacity(
             opacity: 0.7,

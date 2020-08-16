@@ -23,12 +23,6 @@ class Inicio extends StatelessWidget {
               Container(
                 child: Descricao(),
               ),
-              NextBackButton(
-                alignment: Alignment.centerRight,
-                icone: Icons.arrow_forward_ios,
-                widget: Sobre(),
-                dx: 1,
-              ),
               Container(
                 margin: EdgeInsets.only(left: 150, top: 180),
                 height: 220,
@@ -48,6 +42,12 @@ class Inicio extends StatelessWidget {
                       fit: BoxFit.fill),
                   shape: BoxShape.circle,
                 ),
+              ),
+              NextBackButton(
+                alignment: Alignment.centerRight,
+                icone: Icons.arrow_forward_ios,
+                widget: Sobre(),
+                dx: 1,
               ),
             ],
           ),

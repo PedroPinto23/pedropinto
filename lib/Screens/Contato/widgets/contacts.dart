@@ -26,7 +26,7 @@ class Contacts extends StatelessWidget {
                         color: Colors.red[900],
                         icon: Icons.email,
                         onPressed: () {
-                          launch("mailto://pedro.dev42@gmail.com");
+                          launch("mailto:pedro.dev42@gmail.com");
                         },
                       ),
                       Text(

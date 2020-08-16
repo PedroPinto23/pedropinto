@@ -8,43 +8,47 @@ import 'package:my_portfolio/Widgets/Botao/botao.dart';
 class BotoesTopo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Botao(
-            onPressed: () {
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => Inicio(),
-              ));
-            },
-            text: "Início",
-          ),
-          Botao(
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => Sobre(),
-              ));
-            },
-            text: "Sobre",
-          ),
-          Botao(
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => MeusTrabalhos(),
-              ));
-            },
-            text: "Meus Trabalhos",
-          ),
-          Botao(
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => Contato(),
-              ));
-            },
-            text: "Contato",
-          ),
-        ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Botao(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => Inicio(),
+                ));
+              },
+              text: "Início",
+            ),
+            Botao(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Sobre(),
+                ));
+              },
+              text: "Sobre",
+            ),
+            Botao(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => MeusTrabalhos(),
+                ));
+              },
+              text: "Meus Trabalhos",
+            ),
+            Botao(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Contato(),
+                ));
+              },
+              text: "Contato",
+            ),
+          ],
+        ),
       ),
     );
   }

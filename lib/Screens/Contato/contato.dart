@@ -34,7 +34,7 @@ class Contato extends StatelessWidget {
                   padding: EdgeInsets.all(15),
                   alignment: Alignment.topCenter,
                   child: Text(
-                    "Entre Em Contato",
+                    "Entre Em Contato",textAlign: TextAlign.center,
                     style: styleWhiteBigger,
                   ),
                 ),

@@ -42,6 +42,7 @@ class Sobre extends StatelessWidget {
                 alignment: Alignment.topCenter,
                 child: Text(
                   "Quem sou eu",
+                  textAlign: TextAlign.center,
                   style: styleWhiteBigger,
                 ),
               ),

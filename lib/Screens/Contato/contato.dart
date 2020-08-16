@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/Contato/widgets/contacts.dart';
 import 'package:my_portfolio/Screens/Contato/widgets/redes_sociais.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
-import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
+import 'package:my_portfolio/Widgets/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 import 'package:my_portfolio/styles/styles.dart';
 
@@ -24,12 +24,6 @@ class Contato extends StatelessWidget {
         backgroundColor: Colors.grey[900],
         body: Stack(children: [
           ImagemFundo(),
-          NextBackButton(
-            alignment: Alignment.centerLeft,
-            icone: Icons.arrow_back_ios,
-            widget: MeusTrabalhos(),
-            dx: -1,
-          ),
           SingleChildScrollView(
               child: Container(
             height: MediaQuery.of(context).size.height,
@@ -66,6 +60,12 @@ class Contato extends StatelessWidget {
               ],
             ),
           )),
+          NextBackButton(
+            alignment: Alignment.centerLeft,
+            icone: Icons.arrow_back_ios,
+            widget: MeusTrabalhos(),
+            dx: -1,
+          ),
         ]));
   }
 }

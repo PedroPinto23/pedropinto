@@ -3,9 +3,9 @@ import 'package:my_portfolio/Screens/Contato/contato.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Appjur/appjur.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Parceiro/parceiro.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Skill/skill.dart';
-import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
+import 'package:my_portfolio/Widgets/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 import 'package:my_portfolio/styles/styles.dart';
 import 'Projetos/Pettech/pettech.dart';
@@ -26,20 +26,7 @@ class MeusTrabalhos extends StatelessWidget {
         backgroundColor: Colors.grey[900],
         body: Stack(children: [
           ImagemFundo(),
-          NextBackButton(
-            alignment: Alignment.centerLeft,
-            icone: Icons.arrow_back_ios,
-            widget: Sobre(),
-            dx: -1,
-          ),
-          NextBackButton(
-            alignment: Alignment.centerRight,
-            icone: Icons.arrow_forward_ios,
-            widget: Contato(),
-            dx: 1,
-          ),
           Container(
-              margin: EdgeInsets.only(left: 75, right: 75),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,6 +47,18 @@ class MeusTrabalhos extends StatelessWidget {
                   ],
                 ),
               )),
+          NextBackButton(
+            alignment: Alignment.centerLeft,
+            icone: Icons.arrow_back_ios,
+            widget: Sobre(),
+            dx: -1,
+          ),
+          NextBackButton(
+            alignment: Alignment.centerRight,
+            icone: Icons.arrow_forward_ios,
+            widget: Contato(),
+            dx: 1,
+          ),
         ]));
   }
 }

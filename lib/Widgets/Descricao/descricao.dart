@@ -15,7 +15,7 @@ class Descricao extends StatelessWidget {
           children: [
             Container(
               padding: EdgeInsets.only(
-                  left: 460, top: MediaQuery.of(context).size.height / 8),
+                  left: 460, top: MediaQuery.of(context).size.height / 4),
               margin: EdgeInsets.symmetric(vertical: 20),
               child: Text(
                 "Pedro Pinto",

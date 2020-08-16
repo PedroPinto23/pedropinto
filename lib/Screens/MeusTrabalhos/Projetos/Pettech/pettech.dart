@@ -57,24 +57,26 @@ class Pettech extends StatelessWidget {
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                CardProjeto(
-                  height: 170,
-                  width: 280,
-                  image: "images/projetos/pettech_telas.png",
-                ),
-                CardProjeto(
-                  height: 170,
-                  width: 280,
-                  image: "images/projetos/pettech_demo.png",
-                ),
-                CardProjeto(
-                  height: 170,
-                  width: 280,
-                  image: "images/projetos/pettech_telas2.png",
-                ),
-              ],
+            child: Container(
+              child: Row(
+                children: [
+                  CardProjeto(
+                    height: 170,
+                    width: 280,
+                    image: "images/projetos/pettech_telas.png",
+                  ),
+                  CardProjeto(
+                    height: 170,
+                    width: 280,
+                    image: "images/projetos/pettech_demo.png",
+                  ),
+                  CardProjeto(
+                    height: 170,
+                    width: 280,
+                    image: "images/projetos/pettech_telas2.png",
+                  ),
+                ],
+              ),
             ),
           ),
         ],

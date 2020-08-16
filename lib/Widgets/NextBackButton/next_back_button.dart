@@ -14,7 +14,6 @@ class NextBackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
       alignment: alignment,
       child: MaterialButton(
         shape: CircleBorder(),

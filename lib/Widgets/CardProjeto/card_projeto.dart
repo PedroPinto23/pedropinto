@@ -22,10 +22,10 @@ class CardProjeto extends StatelessWidget {
             onTap: () {
               showDialog(
                   context: context,
-                  child: AlertDialog(
-                    contentPadding: EdgeInsets.all(8),
-                    content: model.platformType(kTransparentImage, image),
-                  ));
+                  builder: (context) => AlertDialog(
+                        contentPadding: EdgeInsets.all(8),
+                        content: model.platformType(kTransparentImage, image),
+                      ));
             },
             child: Card(
               margin: EdgeInsets.only(top: 15),

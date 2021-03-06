@@ -54,13 +54,13 @@ class Parceiro extends StatelessWidget {
                   onPressed: () {
                     showDialog(
                         context: context,
-                        child: AlertDialog(
-                          content: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: "images/projetos/parceiro_video.gif",
-                            fit: BoxFit.cover,
-                          ),
-                        ));
+                        builder: (context) => AlertDialog(
+                              content: FadeInImage.memoryNetwork(
+                                placeholder: kTransparentImage,
+                                image: "images/projetos/parceiro_video.gif",
+                                fit: BoxFit.cover,
+                              ),
+                            ));
                   },
                 ),
               ),
@@ -89,13 +89,13 @@ class Parceiro extends StatelessWidget {
                   onPressed: () {
                     showDialog(
                         context: context,
-                        child: AlertDialog(
-                          content: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: "images/projetos/parceiro_video2.gif",
-                            fit: BoxFit.cover,
-                          ),
-                        ));
+                        builder: (context) => AlertDialog(
+                              content: FadeInImage.memoryNetwork(
+                                placeholder: kTransparentImage,
+                                image: "images/projetos/parceiro_video2.gif",
+                                fit: BoxFit.cover,
+                              ),
+                            ));
                   },
                 ),
               ),

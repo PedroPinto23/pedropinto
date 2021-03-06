@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Screens/Contato/contato.dart';
-import 'package:my_portfolio/Screens/Inicio/inicio.dart';
-import 'package:my_portfolio/Screens/MeusTrabalhos/meus_trabalhos.dart';
-import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/Botao/botao.dart';
 
 class BotoesTopo extends StatelessWidget {
@@ -16,35 +12,20 @@ class BotoesTopo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Botao(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => Inicio(),
-                ));
-              },
+              onPressed: () => Navigator.of(context).pushNamed('/'),
               text: "Início",
             ),
             Botao(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Sobre(),
-                ));
-              },
+              onPressed: () => Navigator.of(context).pushNamed('/sobre'),
               text: "Sobre",
             ),
             Botao(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => MeusTrabalhos(),
-                ));
-              },
+              onPressed: () =>
+                  Navigator.of(context).pushNamed('/meusTrabalhos'),
               text: "Meus Trabalhos",
             ),
             Botao(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Contato(),
-                ));
-              },
+              onPressed: () => Navigator.of(context).pushNamed('/contato'),
               text: "Contato",
             ),
           ],

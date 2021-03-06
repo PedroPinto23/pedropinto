@@ -42,13 +42,13 @@ class Pettech extends StatelessWidget {
               onPressed: () {
                 showDialog(
                     context: context,
-                    child: AlertDialog(
-                      content: FadeInImage.memoryNetwork(
-                        placeholder: kTransparentImage,
-                        image: "images/projetos/pettech_demo.gif",
-                        fit: BoxFit.cover,
-                      ),
-                    ));
+                    builder: (context) => AlertDialog(
+                          content: FadeInImage.memoryNetwork(
+                            placeholder: kTransparentImage,
+                            image: "images/projetos/pettech_demo.gif",  
+                            fit: BoxFit.cover,
+                          ),
+                        ));
               },
             ),
           ),

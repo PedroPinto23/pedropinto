@@ -54,13 +54,13 @@ class Appjur extends StatelessWidget {
                   onPressed: () {
                     showDialog(
                         context: context,
-                        child: AlertDialog(
-                          content: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: "images/projetos/appjur_video.gif",
-                            fit: BoxFit.cover,
-                          ),
-                        ));
+                        builder: (context) => AlertDialog(
+                              content: FadeInImage.memoryNetwork(
+                                placeholder: kTransparentImage,
+                                image: "images/projetos/appjur_video.gif",
+                                fit: BoxFit.cover,
+                              ),
+                            ));
                   },
                 ),
               ),
@@ -89,13 +89,13 @@ class Appjur extends StatelessWidget {
                   onPressed: () {
                     showDialog(
                         context: context,
-                        child: AlertDialog(
-                          content: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: "images/projetos/appjur_video2.gif",
-                            fit: BoxFit.cover,
-                          ),
-                        ));
+                        builder: (context) => AlertDialog(
+                              content: FadeInImage.memoryNetwork(
+                                placeholder: kTransparentImage,
+                                image: "images/projetos/appjur_video2.gif",
+                                fit: BoxFit.cover,
+                              ),
+                            ));
                   },
                 ),
               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Model/data_model.dart';
-import 'package:my_portfolio/Screens/Inicio/inicio.dart';
+import 'package:my_portfolio/Theme/theme.dart';
+import 'package:my_portfolio/routes/routes.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 void main() {
@@ -15,13 +16,10 @@ class MyApp extends StatelessWidget {
       model: DataModel(),
       child: MaterialApp(
         title: 'Pedro Pinto',
-        theme: ThemeData(
-          primaryColor: Colors.purple[600],
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
+        initialRoute: '/',
+        routes: routes,
+        theme: theme,
         debugShowCheckedModeBanner: false,
-        home: Inicio(),
       ),
     );
   }

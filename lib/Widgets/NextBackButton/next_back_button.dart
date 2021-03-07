@@ -6,10 +6,10 @@ class NextBackButton extends StatelessWidget {
   final Widget widget;
   final double dx;
   NextBackButton({
-    @required this.alignment,
-    @required this.icone,
-    @required this.widget,
-    @required this.dx,
+    required this.alignment,
+    required this.icone,
+    required this.widget,
+    required this.dx,
   });
   @override
   Widget build(BuildContext context) {

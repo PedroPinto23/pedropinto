@@ -8,6 +8,9 @@ import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 class Inicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -24,7 +27,7 @@ class Inicio extends StatelessWidget {
                 child: Descricao(),
               ),
               Container(
-                margin: EdgeInsets.only(left: 150, top: 180),
+                margin: EdgeInsets.only(left: width / 12, top: height / 4),
                 height: 220,
                 width: 220,
                 decoration: BoxDecoration(

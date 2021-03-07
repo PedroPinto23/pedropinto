@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/Contato/contato.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Appjur/appjur.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Parceiro/parceiro.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Pitacofut/pitacofut.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/Projetos/Skill/skill.dart';
 import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
@@ -28,25 +29,26 @@ class MeusTrabalhos extends StatelessWidget {
           ImagemFundo(),
           Container(
               child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      alignment: Alignment.topCenter,
-                      margin: EdgeInsets.all(8),
-                      child: Text(
-                        "Meus projetos como Freelancer",
-                        textAlign: TextAlign.center,
-                        style: style,
-                      ),
-                    ),
-                    Pettech(),
-                    Appjur(),
-                    Parceiro(),
-                    Skill(),
-                  ],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  alignment: Alignment.topCenter,
+                  margin: EdgeInsets.all(8),
+                  child: Text(
+                    "Meus projetos como Freelancer",
+                    textAlign: TextAlign.center,
+                    style: style,
+                  ),
                 ),
-              )),
+                Pettech(),
+                Appjur(),
+                Parceiro(),
+                Skill(),
+                Pitacofut(),
+              ],
+            ),
+          )),
           NextBackButton(
             alignment: Alignment.centerLeft,
             icone: Icons.arrow_back_ios,

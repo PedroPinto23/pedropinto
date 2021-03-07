@@ -9,8 +9,6 @@ import 'package:my_portfolio/styles/styles.dart';
 class Sobre extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle styleWhiteBigger = styles.styleWhiteBigger;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -38,14 +36,22 @@ class Sobre extends StatelessWidget {
               child: Column(
             children: [
               Container(
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.only(top:15,bottom:50),
                 alignment: Alignment.topCenter,
                 child: Text(
                   "Quem sou eu",
                   textAlign: TextAlign.center,
-                  style: styleWhiteBigger,
+                  style: Styles().styleWhiteBigger,
                 ),
               ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 70),
+                child: Text(
+                  "Atualmente trabalhando como Desenvolvedor de Software,\n sou uma pessoa que se diverte com o que faz, está sempre buscando novos desafios e conhecimentos.\nBastante atencioso, procuro resolver problemas com profissionalismo.\nTenho hobbie de tocar violão e guitarra, curto assistir vídeos em inglês para o aprimoramento da língua.",
+                  textAlign: TextAlign.center,
+                  style: Styles().styleWhiteColor,
+                ),
+              )
             ],
           )),
         ]));

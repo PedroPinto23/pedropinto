@@ -16,30 +16,24 @@ class DataModel extends Model {
           image: image,
           fit: BoxFit.cover,
         );
-        break;
       case TargetPlatform.macOS:
         return FadeInImage.memoryNetwork(
           placeholder: kTransparentImage,
           image: image,
           fit: BoxFit.cover,
         );
-        break;
       case TargetPlatform.linux:
         return FadeInImage.memoryNetwork(
           placeholder: kTransparentImage,
           image: image,
           fit: BoxFit.cover,
         );
-        break;
       case TargetPlatform.android:
         return Image.asset(image, fit: BoxFit.cover);
-        break;
       case TargetPlatform.iOS:
         return Image.asset(image, fit: BoxFit.cover);
-        break;
       case TargetPlatform.fuchsia:
         return Image.asset(image, fit: BoxFit.cover);
-        break;
       default:
         return FadeInImage.memoryNetwork(
           placeholder: kTransparentImage,

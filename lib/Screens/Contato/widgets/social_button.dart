@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
   final IconData icon;
-  final Color color;
+  final Color? color;
   final void Function() onPressed;
   SocialButton({
-    @required this.icon,
-    @required this.color,
-    @required this.onPressed,
+    required this.icon,
+    required this.color,
+    required this.onPressed,
   });
   @override
   Widget build(BuildContext context) {

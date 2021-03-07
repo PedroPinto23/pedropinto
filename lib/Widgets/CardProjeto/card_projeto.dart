@@ -5,10 +5,10 @@ import 'package:transparent_image/transparent_image.dart';
 
 class CardProjeto extends StatelessWidget {
   final String image;
-  final double height;
-  final double width;
+  final double? height;
+  final double? width;
   CardProjeto({
-    @required this.image,
+    required this.image,
     this.height,
     this.width,
   });

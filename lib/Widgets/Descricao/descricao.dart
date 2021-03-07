@@ -27,7 +27,7 @@ class Descricao extends StatelessWidget {
               color: Colors.white,
               padding: EdgeInsets.only(top: 3, left: 460),
               child: Text(
-                "Desenvolvimento Mobile",
+                "Desenvolvedor de Software",
                 style: styleAverageFont,
               ),
             ),
@@ -39,16 +39,20 @@ class Descricao extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Android / Ios",
+                        "Android / Ios / Web",
                         textAlign: TextAlign.right,
                         style: styleWhiteColor,
                       ),
                       SizedBox(
                         height: 40,
                       ),
-                      Text("• Flutter / Dart", style: styleWhiteColor),
-                      Text("• Firebase", style: styleWhiteColor),
-                      Text("• CRUD", style: styleWhiteColor),
+                      Text("• Flutter - Dart", style: styleWhiteColor),
+                      // Integração de API JSON / Serialização
+                      Text("• Firebase / Firebase MlKit", style: styleWhiteColor),
+                      Text("• Integração de API JSON",
+                          style: styleWhiteColor),
+
+                      Text("• Git", style: styleWhiteColor),
                     ])),
           ],
         ),

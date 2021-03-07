@@ -3,7 +3,7 @@ import 'package:my_portfolio/styles/styles.dart';
 
 class Finalizado extends StatelessWidget {
   final String texto;
-  Finalizado({@required this.texto});
+  Finalizado({required this.texto});
   @override
   Widget build(BuildContext context) {
     Styles styles = Styles();

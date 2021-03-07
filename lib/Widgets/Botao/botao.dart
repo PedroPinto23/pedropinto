@@ -5,8 +5,8 @@ class Botao extends StatelessWidget {
   final Function onPressed;
   final String text;
   Botao({
-    @required this.onPressed,
-    @required this.text,
+    required this.onPressed,
+    required this.text,
   });
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Botao extends StatelessWidget {
         color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(45)),
         hoverColor: Colors.grey[900],
-        onPressed: onPressed,
+        onPressed: onPressed as void Function()?,
         child: Text(
           text,
           style: buttonStyle,

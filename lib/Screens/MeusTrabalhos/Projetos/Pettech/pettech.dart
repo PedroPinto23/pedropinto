@@ -7,8 +7,6 @@ import 'package:transparent_image/transparent_image.dart';
 class Pettech extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle styleWhiteBigger = styles.styleWhiteBigger;
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
@@ -20,7 +18,7 @@ class Pettech extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: Text(
               "PetTech",
-              style: styleWhiteBigger,
+              style: Styles().styleWhiteBigger,
             ),
           ),
           Finalizado(
@@ -45,7 +43,7 @@ class Pettech extends StatelessWidget {
                     builder: (context) => AlertDialog(
                           content: FadeInImage.memoryNetwork(
                             placeholder: kTransparentImage,
-                            image: "images/projetos/pettech_demo.gif",  
+                            image: "images/projetos/pettech_demo.gif",
                             fit: BoxFit.cover,
                           ),
                         ));

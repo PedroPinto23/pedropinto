@@ -17,7 +17,7 @@ class SocialButton extends StatelessWidget {
       shape: CircleBorder(),
       margin: EdgeInsets.all(8),
       child: MaterialButton(
-      shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(45.0) ),
+      shape: CircleBorder(),
         padding: EdgeInsets.all(5),
         color: Colors.white,
         hoverColor: Colors.grey[900],

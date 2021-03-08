@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/Sobre/sobre.dart';
 import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
+import 'package:my_portfolio/Widgets/BottomCard/bottom_card.dart';
 import 'package:my_portfolio/Widgets/Descricao/descricao.dart';
 import 'package:my_portfolio/Widgets/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
@@ -23,29 +24,33 @@ class Inicio extends StatelessWidget {
           child: Stack(
             children: [
               ImagemFundo(),
-              Container(
-                child: Descricao(),
-              ),
-              Container(
-                margin: EdgeInsets.only(left: width / 12, top: height / 4),
-                height: 220,
-                width: 220,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 15,
-                      spreadRadius: 3,
-                    )
-                  ],
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "images/perfil.jpg",
+              Descricao(),
+              width >= 905
+                  ? Container(
+                      margin:
+                          EdgeInsets.only(left: width / 12, top: height / 4),
+                      height: 220,
+                      width: 220,
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 15,
+                            spreadRadius: 3,
+                          )
+                        ],
+                        image: DecorationImage(
+                            image: AssetImage(
+                              "images/perfil.jpg",
+                            ),
+                            fit: BoxFit.fill),
+                        shape: BoxShape.circle,
                       ),
-                      fit: BoxFit.fill),
-                  shape: BoxShape.circle,
-                ),
-              ),
+                    )
+                  : Container(),
+              width >= 905
+                  ? Positioned(bottom: 1, right: 1, child: BottomCard())
+                  : Container(),
               NextBackButton(
                 alignment: Alignment.centerRight,
                 icone: Icons.arrow_forward_ios,

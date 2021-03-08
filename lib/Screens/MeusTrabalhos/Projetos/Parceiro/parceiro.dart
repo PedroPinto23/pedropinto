@@ -7,8 +7,6 @@ import 'package:transparent_image/transparent_image.dart';
 class Parceiro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle styleWhiteBigger = styles.styleWhiteBigger;
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
@@ -20,7 +18,7 @@ class Parceiro extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: Text(
               "App Parceiro",
-              style: styleWhiteBigger,
+              style: Styles().styleWhiteBigger,
             ),
           ),
           Finalizado(

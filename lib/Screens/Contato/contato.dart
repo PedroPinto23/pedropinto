@@ -10,9 +10,6 @@ import 'package:my_portfolio/styles/styles.dart';
 class Contato extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle styleWhiteBigger = styles.styleWhiteBigger;
-    TextStyle styleWhiteColor = styles.styleWhiteColor;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -34,8 +31,9 @@ class Contato extends StatelessWidget {
                   padding: EdgeInsets.all(15),
                   alignment: Alignment.topCenter,
                   child: Text(
-                    "Entre Em Contato",textAlign: TextAlign.center,
-                    style: styleWhiteBigger,
+                    "Entre Em Contato",
+                    textAlign: TextAlign.center,
+                    style: Styles().styleWhiteBigger,
                   ),
                 ),
                 Card(
@@ -51,7 +49,7 @@ class Contato extends StatelessWidget {
                       margin: EdgeInsets.only(bottom: 15),
                       child: Text(
                         "Me encontre nas redes sociais",
-                        style: styleWhiteColor,
+                        style: Styles().styleWhiteColor,
                       ),
                     ),
                     RedesSociais(),

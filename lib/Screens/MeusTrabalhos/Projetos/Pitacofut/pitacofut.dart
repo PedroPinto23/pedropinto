@@ -6,8 +6,6 @@ import 'package:my_portfolio/styles/styles.dart';
 class Pitacofut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle styleWhiteBigger = styles.styleWhiteBigger;
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
@@ -19,7 +17,7 @@ class Pitacofut extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: Text(
               "App Pitacofut.net",
-              style: styleWhiteBigger,
+              style: Styles().styleWhiteBigger,
             ),
           ),
           Finalizado(

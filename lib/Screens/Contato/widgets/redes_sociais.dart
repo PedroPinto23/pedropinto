@@ -14,22 +14,34 @@ class RedesSociais extends StatelessWidget {
             icon: FontAwesomeIcons.linkedinIn,
             color: Colors.blue,
             onPressed: () {
-              launch(
-                  "https://www.linkedin.com/in/pedro-henrique-de-oliveira-pinto-04340612b/");
+              try {
+                launch(
+                    "https://www.linkedin.com/in/pedro-henrique-de-oliveira-pinto-04340612b/");
+              } catch (e) {
+                print(e);
+              }
             },
           ),
           SocialButton(
             icon: FontAwesomeIcons.githubAlt,
             color: Colors.black,
             onPressed: () {
-              launch("https://github.com/PedroPinto23");
+              try {
+                launch("https://github.com/PedroPinto23");
+              } catch (e) {
+                print(e);
+              }
             },
           ),
           SocialButton(
             icon: FontAwesomeIcons.twitter,
             color: Colors.blue,
             onPressed: () {
-              launch("https://twitter.com/pedro_pinto95");
+              try {
+                launch("https://twitter.com/pedro_pinto95");
+              } catch (e) {
+                print(e);
+              }
             },
           ),
         ],

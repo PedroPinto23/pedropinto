@@ -14,8 +14,6 @@ import 'Projetos/Pettech/pettech.dart';
 class MeusTrabalhos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Styles styles = Styles();
-    TextStyle style = styles.styleWhiteBigger;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -38,7 +36,7 @@ class MeusTrabalhos extends StatelessWidget {
                   child: Text(
                     "Meus projetos como Freelancer",
                     textAlign: TextAlign.center,
-                    style: style,
+                    style: Styles().styleWhiteBigger,
                   ),
                 ),
                 Pettech(),

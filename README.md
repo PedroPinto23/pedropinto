@@ -4,7 +4,7 @@ A new Flutter + Firebase project.
 
 Developing my own portfolio with tools that I'm familiarized with.
 <p align="left">
-   <img src ='images/tenor.gif'width="100" height="120" >
+   <img src ='images/tenor.gif'width="120" height="100" >
 </p>
 
 Link: https://pedropinto-9c312.web.app/#/

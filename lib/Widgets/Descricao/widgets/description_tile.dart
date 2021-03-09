@@ -35,6 +35,7 @@ class DescriptionTile extends StatelessWidget {
       SkillsTile(skill: "Flutter - Dart"),
       SkillsTile(skill: "Firebase / Firebase MlKit"),
       SkillsTile(skill: "Integração de API JSON"),
+      SkillsTile(skill: "Métodologias Ágeis (JIRA)"),
       SkillsTile(skill: "Git"),
     ]);
   }

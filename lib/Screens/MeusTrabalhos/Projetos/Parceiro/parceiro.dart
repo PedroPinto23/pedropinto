@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/DemoCard/demo_card.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class Parceiro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
       child: Column(
@@ -24,80 +23,9 @@ class Parceiro extends StatelessWidget {
           Finalizado(
             texto: "2 meses",
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                child: MaterialButton(
-                  hoverColor: Colors.black,
-                  color: Colors.white,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.gif,
-                          color: Theme.of(context).primaryColor,
-                          size: 42,
-                        ),
-                        Icon(
-                          Icons.looks_one,
-                          color: Theme.of(context).primaryColor,
-                          size: 32,
-                        ),
-                      ],
-                    ),
-                  ),
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) => AlertDialog(
-                              content: FadeInImage.memoryNetwork(
-                                placeholder: kTransparentImage,
-                                image: "images/projetos/parceiro_video.gif",
-                                fit: BoxFit.cover,
-                              ),
-                            ));
-                  },
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                child: MaterialButton(
-                  hoverColor: Colors.black,
-                  color: Colors.white,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.gif,
-                          color: Theme.of(context).primaryColor,
-                          size: 42,
-                        ),
-                        Icon(
-                          Icons.looks_two,
-                          color: Theme.of(context).primaryColor,
-                          size: 32,
-                        ),
-                      ],
-                    ),
-                  ),
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) => AlertDialog(
-                              content: FadeInImage.memoryNetwork(
-                                placeholder: kTransparentImage,
-                                image: "images/projetos/parceiro_video2.gif",
-                                fit: BoxFit.cover,
-                              ),
-                            ));
-                  },
-                ),
-              ),
-            ],
+          DemoCard(
+            path1: "images/projetos/parceiro_video.gif",
+            path2: "images/projetos/parceiro_video2.gif",
           ),
           SizedBox(
             height: 5,

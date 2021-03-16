@@ -47,7 +47,7 @@ class Sobre extends StatelessWidget {
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 70),
                 child: Text(
-                  "Atualmente trabalhando como Desenvolvedor de Software,\n sou uma pessoa que se diverte com o que faz, está sempre buscando novos desafios e conhecimentos.\nBastante atencioso, procuro resolver problemas com profissionalismo.\nTenho hobbie de tocar violão e guitarra, curto assistir vídeos em inglês para o aprimoramento da língua.",
+                  "Atualmente atuando na área de Desenvolvedor de Software,\n sou uma pessoa que se diverte com o que faz, está sempre buscando novos desafios e conhecimentos.\nBastante atencioso, procuro resolver problemas com profissionalismo.\nTenho hobbie de tocar violão e guitarra, curto assistir vídeos em inglês para o aprimoramento da língua.",
                   textAlign: TextAlign.center,
                   style: Styles().styleWhiteColor,
                 ),

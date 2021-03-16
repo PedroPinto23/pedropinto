@@ -37,6 +37,7 @@ class DescriptionTile extends StatelessWidget {
       SkillsTile(skill: "Integração de API JSON"),
       SkillsTile(skill: "Métodologias Ágeis (JIRA)"),
       SkillsTile(skill: "Git"),
+      SkillsTile(skill: "Bitbucket"),
     ]);
   }
 }

@@ -12,22 +12,18 @@ class BotoesTopo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Botao(
-              onPressed: () => Navigator.of(context).pushNamed('/'),
-              text: "Início",
-            ),
+                onPressed: () => Navigator.of(context).pushNamed('/'),
+                text: "Início"),
             Botao(
-              onPressed: () => Navigator.of(context).pushNamed('/sobre'),
-              text: "Sobre",
-            ),
+                onPressed: () => Navigator.of(context).pushNamed('/sobre'),
+                text: "Sobre"),
             Botao(
-              onPressed: () =>
-                  Navigator.of(context).pushNamed('/meusTrabalhos'),
-              text: "Meus Trabalhos",
-            ),
+                onPressed: () =>
+                    Navigator.of(context).pushNamed('/meusTrabalhos'),
+                text: "Meus Trabalhos"),
             Botao(
-              onPressed: () => Navigator.of(context).pushNamed('/contato'),
-              text: "Contato",
-            ),
+                onPressed: () => Navigator.of(context).pushNamed('/contato'),
+                text: "Contato"),
           ],
         ),
       ),

@@ -88,7 +88,7 @@ class Descricao extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 20),
                   child: DescriptionTile()),
               SizedBox(height: 8),
-              BottomCard(),
+              Container(alignment: Alignment.bottomCenter, child: BottomCard()),
             ],
           ),
         ),

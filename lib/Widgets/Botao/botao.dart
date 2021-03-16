@@ -14,9 +14,10 @@ class Botao extends StatelessWidget {
     TextStyle buttonStyle = styles.buttonStyle;
     return Container(
       child: MaterialButton(
+        padding: EdgeInsets.all(18),
         elevation: 0,
         color: Colors.white,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(45)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         hoverColor: Colors.grey[900],
         onPressed: onPressed as void Function()?,
         child: Text(

@@ -9,6 +9,7 @@ import 'package:my_portfolio/Widgets/BotoesTopo/botoes_topo.dart';
 import 'package:my_portfolio/Widgets/Imagem_Fundo/imagem_fundo.dart';
 import 'package:my_portfolio/Widgets/NextBackButton/next_back_button.dart';
 import 'package:my_portfolio/styles/styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'Projetos/Pettech/pettech.dart';
 
 class MeusTrabalhos extends StatelessWidget {
@@ -28,7 +29,7 @@ class MeusTrabalhos extends StatelessWidget {
           Container(
               child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   alignment: Alignment.topCenter,
@@ -37,6 +38,29 @@ class MeusTrabalhos extends StatelessWidget {
                     "Meus projetos como Freelancer",
                     textAlign: TextAlign.center,
                     style: Styles().styleWhiteBigger,
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    try {
+                      launch("https://freelancer.com.br/perfil/pedro-f68389");
+                    } catch (e) {
+                      print(e);
+                    }
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.open_in_browser,
+                        color: Colors.green,
+                      ),
+                      SizedBox(width: 5),
+                      Text(
+                        "Meu perfil na plataforma",
+                        style: Styles().styleWhiteColor,
+                      )
+                    ],
                   ),
                 ),
                 Pettech(),

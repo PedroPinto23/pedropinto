@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/DemoCard/demo_card.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Referencia/referencia.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class Pettech extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Container(
       margin: EdgeInsets.symmetric(vertical: 8),
       child: Column(
@@ -24,31 +24,9 @@ class Pettech extends StatelessWidget {
           Finalizado(
             texto: "1 mês",
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-            child: MaterialButton(
-              hoverColor: Colors.black,
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Icon(
-                  Icons.gif,
-                  color: Theme.of(context).primaryColor,
-                  size: 42,
-                ),
-              ),
-              onPressed: () {
-                showDialog(
-                    context: context,
-                    builder: (context) => AlertDialog(
-                          content: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: "images/projetos/pettech_demo.gif",
-                            fit: BoxFit.cover,
-                          ),
-                        ));
-              },
-            ),
+          DemoCard(
+            path1: "images/projetos/pettech_demo.gif",
+            isCardSingle: true,
           ),
           SizedBox(
             height: 5,
@@ -77,6 +55,7 @@ class Pettech extends StatelessWidget {
               ),
             ),
           ),
+          Referencia(path: "images/projetos/referencia_1.png"),
         ],
       ),
     );

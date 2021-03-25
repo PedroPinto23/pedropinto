@@ -7,7 +7,7 @@ Developing my own portfolio with tools that I'm familiarized with.
    <img src ='images/tenor.gif'width="120" height="100" >
 </p>
 
-Link: https://pedropinto-9c312.web.app/#/
+Link: https://pedropinto-9c312.firebaseapp.com/#/
 
 <p align="center">
    <img src ='images/modelo_1.png' >

@@ -25,6 +25,11 @@ class Styles {
     fontSize: 22,
     color: Colors.white,
   );
+
+  TextStyle styleYellowColor = GoogleFonts.chelseaMarket(
+    fontSize: 22,
+    color: Colors.yellow,
+  );
   TextStyle styleWhiteBigger = GoogleFonts.chelseaMarket(
     fontSize: 42,
     color: Colors.white,

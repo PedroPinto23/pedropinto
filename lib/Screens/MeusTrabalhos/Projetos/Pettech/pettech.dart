@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/DemoCard/demo_card.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Description/description.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Referencia/referencia.dart';
+import 'package:my_portfolio/Widgets/Botao/button_row.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Pettech extends StatelessWidget {
   @override
@@ -23,6 +27,18 @@ class Pettech extends StatelessWidget {
           ),
           Finalizado(
             texto: "1 mês",
+          ),
+          ButtonRow(
+              icon: Icon(
+                FontAwesomeIcons.googlePlay,
+                color: Colors.blue,
+              ),
+              title: "App na Google Play",
+              link:
+                  "https://play.google.com/store/apps/details?id=br.com.pettech.Medicpet_app"),
+          Description(
+            description:
+                "Primeiro projeto desenvolvido como Freelancer. Empresa que fornece serviço tecnológico\n pra Veterinárias necessitava de um aplicativo para que apenas seus clientes credenciados pudessem acessar.",
           ),
           DemoCard(
             path1: "images/projetos/pettech_demo.gif",

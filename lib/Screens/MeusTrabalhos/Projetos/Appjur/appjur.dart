@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/DemoCard/demo_card.dart';
+import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Description/description.dart';
 import 'package:my_portfolio/Screens/MeusTrabalhos/widgets/Finalizado/finalizado.dart';
 import 'package:my_portfolio/Widgets/CardProjeto/card_projeto.dart';
 import 'package:my_portfolio/styles/styles.dart';
@@ -22,6 +23,10 @@ class Appjur extends StatelessWidget {
           ),
           Finalizado(
             texto: "13 dias",
+          ),
+          Description(
+            description:
+                "Elaboração em Flutter/Dart de código multiplataforma para aplicativos Android e iOS, necessário para realizar\na autenticação de usuários no Firebase (através de e-mail/senha, Google, Facebook, Twitter e Apple),\nassim como a autenticação local via sensor de impressão digital (Android) e Face ID (iOS)",
           ),
           DemoCard(
             path1: "images/projetos/appjur_video.gif",
